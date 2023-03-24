@@ -1,0 +1,112 @@
+@import "./normalize";
+@import "./colors";
+@import "./mixins";
+
+* {
+    font-family: "Nunito Sans", Roboto, sans-serif;
+}
+
+body {
+    background: $yellow;
+}
+
+.app {
+    padding: 43px 61px 63px 39px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1340px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: $doctor;
+}
+
+.main {
+    padding: 0 42px 0 73px;
+}
+
+.main__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__title {
+    @include extraBoldText(32px, 39px);
+}
+
+.content__block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-item:not(:nth-child(4n)) {
+    margin-right: 35px;
+}
+
+.mb-65 {
+    margin-bottom: 65px;
+}
+.mr-35 {
+    margin-right: 35px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-22 {
+    margin-bottom: 22px;
+}
+
+.mb-17 {
+    margin-bottom: 17px;
+}
+
+.mt-17 {
+    margin-top: 17px;
+}
+
+.mr-17 {
+    margin-right: 17px;
+}
+
+.mr-9 {
+    margin-right: 9px;
+}
+
+.mr-6 {
+    margin-right: 6px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.mr-7 {
+    margin-right: 7px;
+}
+
+.mb-11 {
+    margin-bottom: 11px;
+}
+
+.mb-7 {
+    margin-bottom: 7px;
+}
+
+.mx-13 {
+    margin: 0 13px;
+}

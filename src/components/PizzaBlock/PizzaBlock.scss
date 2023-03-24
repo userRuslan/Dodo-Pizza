@@ -1,0 +1,28 @@
+@import "/src/scss/colors";
+@import "/src/scss/mixins";
+
+.pizza-block {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+.pizza-block__title {
+    @include extraBoldText(20px, 24px);
+}
+
+.pizza-block__price {
+    @include boldText(22px, 27px);
+}
+
+.pizza-block__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

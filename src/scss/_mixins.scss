@@ -1,0 +1,20 @@
+@mixin boldText($size, $lineHeight) {
+    font-size: $size;
+    font-weight: 700;
+    line-height: $lineHeight;
+    letter-spacing: 0.015em;
+}
+
+@mixin extraBoldText($size, $lineHeight) {
+    font-size: $size;
+    font-weight: 800;
+    line-height: $lineHeight;
+    letter-spacing: 0.01em;
+}
+
+@mixin normalText($size, $lineHeight) {
+    font-size: $size;
+    font-weight: 400;
+    line-height: $lineHeight;
+    letter-spacing: 0em;
+}

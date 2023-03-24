@@ -1,0 +1,33 @@
+@import "/src/scss/colors";
+@import "/src/scss/mixins";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 32px 43px 83px;
+    span {
+        width: 1px;
+        height: 25px;
+        background: $whiteLight;
+    }
+}
+
+.header__info-block {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    @include extraBoldText(24px, 29px);
+}
+
+.header__slogan {
+    @include normalText(16px, 19px);
+    color: $namaraGray;
+}
+
+.cart-block {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,61 @@
+@import "/src/scss/colors";
+@import "/src/scss/mixins";
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $orange;
+    color: $white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    @include boldText(16px, 19px);
+    &.toggle-button {
+        &:hover {
+            background: $white;
+            color: $orange;
+            border: 1px solid $orange;
+        }
+        &:active {
+            background: $doctor;
+        }
+    }
+    &.outlined {
+        background: $white;
+        border: 1px solid $orange;
+        color: $orange;
+        &:hover {
+            background: $orange;
+            color: $white;
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+            .button-count {
+                background: $white;
+                color: $orange;
+            }
+        }
+        &:active {
+            background: $orangeLight;
+        }
+    }
+    &.black {
+        background: $direWolf;
+    }
+}
+
+.button-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $orange;
+    color: $white;
+    @include boldText(13px, 15px);
+}
