@@ -29,7 +29,7 @@ export default function Home () {
                 <div className="content__block">
                     {isLoadingPizzas ?
                         items.map((item) => (
-                            <div key={item.id} className='content-item mb-65'>
+                            <div key={item.id} className='content-item'>
 
                                 <PizzaBlock {...item} />
                             </div>
